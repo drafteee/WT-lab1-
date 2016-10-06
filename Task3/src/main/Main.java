@@ -11,14 +11,11 @@ public class Main {
     public static void main(String[] args){
         Handler handler = new Handler();
         Scanner scanner = new Scanner(System.in);
-        try{
-            double startPosition = scanner.nextDouble();
-            double finishPosition = scanner.nextDouble();
-            double step = scanner.nextDouble();
 
-            handler.OutputFunction(startPosition,finishPosition,step);
-        }catch (Exception exc){
-            System.out.print("Incorrect values!");
-        }
+        double startPosition = scanner.nextDouble();
+        double finishPosition = scanner.nextDouble();
+        double step = scanner.nextDouble();
+
+        handler.OutputFunction(startPosition,finishPosition,step);
     }
 }
